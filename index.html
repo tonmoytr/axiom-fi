@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXIOM AI</title>
+    <link rel="shortcut icon" href="./images/axi.jpg" type="image/x-icon" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+          url("./images/back.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: white;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(77, 77, 77, 0.308);
+        border-radius: 10px;
+      }
+
+      .banner {
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      .banner img {
+        width: 150px;
+        height: auto;
+      }
+
+      .banner h1 {
+        margin: 20px 0;
+        font-size: 2.5em;
+      }
+
+      .banner p {
+        font-size: 1.2em;
+        line-height: 1.5;
+      }
+
+      .banner .buttons {
+        margin-top: 20px;
+      }
+
+      .banner .buttons button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 1em;
+        color: white;
+        background-color: #00e05d;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .banner .buttons button:hover {
+        background-color: #4b99f8;
+      }
+
+      .conversation {
+        margin: 40px 0;
+      }
+
+      .conversation h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+
+      .conversation-box {
+        background-color: #1e1e2d98;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .conversation-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .conversation-item.user {
+        justify-content: flex-end;
+      }
+
+      .conversation-item.ai {
+        justify-content: flex-start;
+      }
+
+      .conversation-item .message {
+        max-width: 70%;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 1em;
+        line-height: 1.5;
+      }
+
+      .conversation-item.user .message {
+        background-color: #0056b3;
+        color: white;
+        text-align: right;
+      }
+
+      .conversation-item.ai .message {
+        background-color: #333;
+        color: white;
+        text-align: left;
+      }
+
+      .conversation-item.ai .message code {
+        display: block;
+        background-color: #1d1f27;
+        color: #00ff6a;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: Consolas, "Courier New", monospace;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #121212;
+        color: white;
+        font-size: 0.9em;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .banner h1 {
+          font-size: 2em;
+        }
+
+        .banner p {
+          font-size: 1em;
+        }
+
+        .conversation h2 {
+          font-size: 1.5em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .banner h1 {
+          font-size: 1.8em;
+        }
+
+        .banner p {
+          font-size: 0.9em;
+        }
+
+        .conversation h2 {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Banner Section -->
+      <section class="banner">
+        <img
+          style="border-radius: 50%"
+          src="./images/axi.jpg"
+          alt="AXIOM AI Logo"
+        />
+        <!-- Replace with your logo URL -->
+        <h1>Welcome to AXIOM AI</h1>
+        <p>
+          Your intelligent companion for solving coding challenges and beyond.
+        </p>
+        <p style="color: #ffee00">CA : XXXXXXXXXXXXXXXXXXXX</p>
+        <div class="buttons">
+          <a href="pflink"><button>PumpFun</button></a>
+          <a href="twitterlink"><button>Follow Us</button></a>
+        </div>
+      </section>
+
+      <!-- Conversation Sample Section -->
+      <section class="conversation">
+        <h2>Conversation with <span style="color: #ffee00">AXIOM AI</span></h2>
+        <div class="conversation-box">
+          <div class="conversation-item user">
+            <div class="message">Q: How can I reverse a string in Python?</div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: You can use slicing:<br /><code
+                >reversed_string = your_string[::-1]</code
+              >
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: How do I find the factorial of a number in Python?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: Use the <code>math</code> module:<br /><code
+                >import math<br />result = math.factorial(n)</code
+              >
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">Q: How can I check if a number is prime?</div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: Use a loop to check divisibility from 2 to
+              <code>sqrt(n)</code>.
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: What is the syntax for a list comprehension?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: <code>[expression for item in iterable if condition]</code>.
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">Q: How do I handle exceptions in Python?</div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">A: Use a <code>try-except</code> block.</div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: How can I find the largest number in a list?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">A: Use the <code>max()</code> function.</div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: How do I sort a list in descending order?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: Use <code>sorted(list, reverse=True)</code>.
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: How can I merge two dictionaries in Python?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: Use the <code>update()</code> method or dictionary
+              unpacking:<br /><code>{**dict1, **dict2}</code>.
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: How do I remove duplicates from a list?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: Convert the list to a set:<br /><code
+                >unique_list = list(set(your_list))</code
+              >.
+            </div>
+          </div>
+          <div class="conversation-item user">
+            <div class="message">
+              Q: How do I calculate the Fibonacci sequence?
+            </div>
+          </div>
+          <div class="conversation-item ai">
+            <div class="message">
+              A: Use recursion or iteration to compute it.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer>&copy; 2025 AXIOM AI | All rights reserved.</footer>
+    </div>
+  </body>
+</html>
